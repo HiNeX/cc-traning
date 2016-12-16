@@ -1,5 +1,5 @@
 variables:
-  MAGIC_VAR:
+  DUMMY_VAR:
     description: "test"
     required: false
     type: string
