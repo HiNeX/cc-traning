@@ -1,13 +1,7 @@
 variables:
-  EC2_REGIONS:
-    description: "elb regions"
-    required: false
-    type: array
-    default:
-     - us-east-1
-  EC2_ALERTS:
-    description: "Alerts array"
-    required: true
-    type: array
-    default:
-     - cc-roman-training
+    AUDIT_AWS_ELB_REGIONS:
+         description: "List of AWS regions to check. Default is us-east-1,us-west-1,us-west-2,eu-west-1."
+         required: true
+         type: array
+         default:
+          - us-east-1
