@@ -23,7 +23,7 @@ coreo_aws_advisor_alert "ec2-alert-snapshot" do
   objectives ["snapshots", "snapshots"]
   audit_objects ["snapshot_set.volume_size", "snapshot_set.encrypted"]
   operators [">", "=="]
-  alert_when [8, true]
+  alert_when [8, false]
 end
 
 coreo_aws_advisor_elb "cc-roman-training" do
