@@ -1,19 +1,20 @@
-coreo_aws_advistor_alert "elb-inventory" do
+coreo_aws_advisor_alert "elb-inventory" do
   action :define
   service :elb
+  #include_violations_in_count false
   display_name "ELB Object Health Check"
-  description "Load balancer health check"
+  description "Load balancer health check is greater then 2 min."
   category "Inventory"
   suggested_action "None."
   level "Informational"
   objectives ["load_balancers"]
-  audit_objects ["load_balancer_description.health_check.interval"]
+  audit_objects ["load_balancer_descriptions.health_check.interval"]
   operators [">"]
-  alert_when [120]
+  alert_when [1]
 end
 
-coreo_aws_advisor_elb "elb-inventory" do
+coreo_aws_advisor_elb "advise-elb" do
+  alerts ${AUDIT_AWS_ELB_ALERT_LIST}
   action :advise
-  alerts ${ELB_ALERTS}
-  regions ${ELB_REGIONS}
+  regions ${AUDIT_AWS_ELB_REGIONS}
 end
