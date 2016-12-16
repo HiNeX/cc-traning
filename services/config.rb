@@ -1,6 +1,6 @@
 coreo_aws_advisor_alert "ec2-alert-snapshot" do
   action :define
-  service :elb
+  service :ec2
   display_name "ELB Object Health Check"
   description "Load balancer health check"
   category "Inventory"
