@@ -1,5 +1,6 @@
-MAJESTIC_VAR:
-  description: "Majestic var!"
-  required: "false"
-  type: "string"
-  default: "nothing"
+variables:
+  MAJESTIC_VAR:
+    description: Majestic var
+    required: false
+    type: string
+    default: nothing
