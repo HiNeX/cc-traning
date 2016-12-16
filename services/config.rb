@@ -22,7 +22,7 @@ coreo_aws_advisor_alert "ec2-alert-snapshot" do
   level "Informational"
   objectives ["describe_snapshots"]
   audit_objects ["snapshot_set.volume_size", "snapshot_set.encrypted"]
-  operators [">", "==="]
+  operators [">", "=="]
   alert_when [8, true]
 end
 
