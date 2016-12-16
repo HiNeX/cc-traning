@@ -14,5 +14,6 @@ end
 
 coreo_aws_advisor_elb "elb-inventory" do
   action :advise
-  alerts ["roman"]
+  alerts ${ELB_ALERTS}
+  regions ${ELB_REGIONS}
 end
