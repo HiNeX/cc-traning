@@ -1,11 +1,11 @@
 variables:
-  ELB_REGIONS:
+  EC2_REGIONS:
     description: "elb regions"
     required: false
     type: array
     default:
      - us-east-1
-  ELB_ALERTS:
+  EC2_ALERTS:
     description: "Alerts array"
     required: true
     type: array
