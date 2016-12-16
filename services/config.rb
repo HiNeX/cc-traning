@@ -1,4 +1,4 @@
-coreo_aws_advisor_alert "cc-emilkip-training" do
+coreo_aws_advisor_alert "cc-roman-training" do
   action :define
   service :elb
   display_name "ELB Object Health Check"
@@ -12,7 +12,7 @@ coreo_aws_advisor_alert "cc-emilkip-training" do
   alert_when [120]
 end
 
-coreo_aws_advisor_elb "cc-emilkip-training" do
+coreo_aws_advisor_elb "cc-roman-training" do
   action :advise
   alerts ${ELB_ALERTS}
   regions ${ELB_REGIONS}
