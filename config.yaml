@@ -1,6 +1,6 @@
 variables:
   MAJESTIC_VAR:
-    description: "Majestic var"
+    description: "test"
     required: false
     type: string
     default:
