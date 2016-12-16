@@ -1,5 +1,5 @@
 coreo_aws_advistor_alert "elb-inventory" do
-  alert :define
+  action :define
   service :elb
   display_name "ELB Object Inventory"
   description "Load balancer health check is greater then 2 min"

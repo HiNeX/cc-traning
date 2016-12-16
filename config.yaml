@@ -1,6 +1,6 @@
 variables:
-  MAJESTIC_VAR:
-    description: Majestic var
+  MAGIC_VAR:
+    description: "test"
     required: false
     type: string
-    default: nothing
+    default:
