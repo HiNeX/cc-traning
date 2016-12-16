@@ -20,7 +20,7 @@ coreo_aws_advisor_alert "ec2-alert-snapshot" do
   category "Inventory"
   suggested_action "None."
   level "Informational"
-  objectives ["describe_snapshots"]
+  objectives ["snapshots", "snapshots"]
   audit_objects ["snapshot_set.volume_size", "snapshot_set.encrypted"]
   operators [">", "=="]
   alert_when [8, true]
